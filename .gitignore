@@ -28,4 +28,4 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-misc.xml
+.idea/misc.xml
