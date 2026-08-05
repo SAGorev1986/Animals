@@ -4,30 +4,6 @@
 *.iws
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-# ============ Eclipse ============
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-# ============ NetBeans ============
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-# ============ VS Code ============
-.vscode/
 
 # ============ Maven ============
 target/
@@ -37,8 +13,7 @@ target/
 *.log
 hs_err_pid*
 
-# ============ Библиотеки (JAR) ============
-# Если вы скачивали драйвер PostgreSQL вручную
+# ============ Пакетные файлы ============
 *.jar
 *.war
 *.ear
@@ -46,13 +21,17 @@ hs_err_pid*
 *.tar.gz
 *.rar
 
-# ============ Mac OS ============
-.DS_Store
-.AppleDouble
-._*
-
-# ============ Windows ============
+# ============ Системные файлы ============
+# Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Linux
+*~
