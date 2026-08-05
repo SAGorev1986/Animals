@@ -90,7 +90,7 @@ public abstract class AbsBaseTable {
         pstmt.setInt(valueList.size() + 1, id);
 
         int rowsAffected = pstmt.executeUpdate();
-        return rowsAffected > 0; // <-- Универсальная проверка!
+        return rowsAffected > 0;
     }
 
     // Универсальный метод удаления (возвращает true, если запись найдена и удалена)
@@ -100,11 +100,11 @@ public abstract class AbsBaseTable {
         pstmt.setInt(1, id);
 
         int rowsAffected = pstmt.executeUpdate();
-        return rowsAffected > 0; // <-- Универсальная проверка!
+        return rowsAffected > 0;
     }
 
 
-    // Метод для удаления таблицы (как на скриншоте)
+    // Метод для удаления таблицы
     public void deleteTable() throws SQLException {
         String sql = String.format("DROP TABLE %s", tableName);
         idbConnectionManager.getConnection().createStatement().execute(sql);
