@@ -1,12 +1,11 @@
 public enum Command {
-    ADD, LIST, EXIT;
+    ADD, LIST, FILTER, UPDATE, DELETE, EXIT;
 
     public static Command fromString(String input) {
-        if (input == null) {
-            return null;
-        }try{
+        if (input == null) return null;
+        try {
             return Command.valueOf(input.trim().toUpperCase());
-        }catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             return null;
         }
     }

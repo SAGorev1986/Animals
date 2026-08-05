@@ -1,10 +1,15 @@
-public class Dog extends Animal{
-    public Dog (String name,int age,double weight, String color) {
-        super(name, age, weight, color);
+public class Dog extends Animal {
+    public Dog(int id, String name, int age, double weight, String color) {
+        super(id, name, age, weight, color);
     }
 
     @Override
-    public void say(){
-        System.out.println("Гав-гав-гаф");
+    public void say() {
+        System.out.println("Гав");
+    }
+
+    @Override
+    public String getType() {
+        return "dog";
     }
 }
