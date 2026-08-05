@@ -102,6 +102,7 @@ public class Main {
         while (true) {
             try {
                 return Integer.parseInt(scanner.nextLine().trim());
+
             } catch (NumberFormatException e) {
                 System.out.print("Некорректный ввод. Введите число заново: ");
             }
